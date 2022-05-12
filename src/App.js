@@ -1,7 +1,7 @@
 import './App.css';
 import Nav from './components/Nav.jsx';
 import { Routes, Route } from "react-router-dom";
-import Experiences from './screens/Experiences';
+import Experiences from './screens/Contact';
 import Projects from './screens/Projects';
 import About from './screens/About';
 import Home from './screens/Home';
@@ -11,8 +11,8 @@ function App() {
     <div>
       <Nav />
       <Routes>
-        <Route path="/"  />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Home element={<About />}/>} />
+        <Route path="/about" element={<About />}   />
         <Route path="/experiences" element={<Experiences />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    button {
+    @apply text-white border  bg-orange-400 border-orange-400
+    hover:bg-transparent hover:text-orange-400 rounded-md
+  }
+  
+    .navlink{
+      @apply p-4
+    }
+
+    section {
+      @apply w-screen h-screen
+    }
+}
+
+
+  
