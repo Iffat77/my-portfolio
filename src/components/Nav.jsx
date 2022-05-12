@@ -16,8 +16,8 @@ function Nav() {
   return (
     <div className="w-screen h-[5rem] z-10 bg-slate-300 fixed drop-shadow-lg ">
       <div className="px-2 flex justify-between items-center w-full h-full">
-        <div className="flex items-center">
-          <div onClick={routeChangeHome}className="text-3xl font-bold mr-4 sm:text-4xl">IH</div>
+        <div onClick={routeChangeHome}className="text-3xl font-bold mr-4 sm:text-4xl cursor-pointer">IH</div>
+          <div className="flex items-center">
             <ul className="nav hidden md:flex">
               <NavLink className='navlink' to="/">Home</NavLink>
               <NavLink className='navlink' to="/projects">Projects</NavLink>
