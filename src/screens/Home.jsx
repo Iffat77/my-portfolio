@@ -20,8 +20,12 @@ function Home() {
     navigate(path);
   }
 
-  const handleClick = () => {
+  const handleClickArc = () => {
     window.open("https://guileless-sprinkles-26705e.netlify.app/","_blank");
+  }
+
+  const handleClickGuess = () => {
+    window.open("https://iffat77.github.io/frontend-game/","_blank");
   }
 
 
@@ -42,7 +46,7 @@ function Home() {
       <section className='my-5 md:flex md:flex-row h-full '>
        
         <div className='flex justify-center items-center md:pt-4 md:w-1/2 mb-4  sm:p0 sm:justify-center md:p-0 lg:mb-4'>
-        <a className='m-0 flex justify-center items-center' href="https://iffat77.github.io/frontend-game/" target="_blank"> <img className='md:object-contain  md:rounded-md  md:border-none h-3/4 w-3/4 rounded-md border-solid border-2 border-slate-100 hover:drop-shadow-md ' src={guesswork} /> </a>
+         <img onClick={handleClickGuess} className='md:object-contain  md:rounded-md  md:border-none h-3/4 w-3/4 rounded-md border-solid border-2 border-slate-100 hover:drop-shadow-md ' src={guesswork} /> 
         </div>
 
         <div className='flex md:w-1/2 items-center justify-center'>  
@@ -64,7 +68,7 @@ function Home() {
         
         <div className='flex justify-center items-center md:w-1/2 mb-4 sm:mb-4 sm:p0 sm:justify-center md:p-0 md:mb-4 lg:mb-4'>
           
-          <img onClick={handleClick} className='md:object-cover lg:object-contain md:rounded-md md:border-none h-3/4 w-3/4 rounded-md border-solid border-2  border-slate-100 hover:drop-shadow-md' src={Nycarc} />
+          <img onClick={handleClickArc} className='md:object-cover lg:object-contain md:rounded-md md:border-none h-3/4 w-3/4 rounded-md border-solid border-2  border-slate-100 hover:drop-shadow-md' src={Nycarc} />
         
         </div>
         
