@@ -1,6 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
+import pdf from '../documents/iffathossainresume.pdf' 
 import React from "react";
 
 function Nav() {
@@ -20,9 +21,10 @@ function Nav() {
           <div className="flex items-center">
             <ul className="nav hidden md:flex">
               <NavLink className='navlink' to="/">Home</NavLink>
-              <NavLink className='navlink' to="/projects">Projects</NavLink>
               <NavLink className='navlink' to="/about">About</NavLink>
-             <NavLink className='navlink' to="/contact">Contact</NavLink>
+              <NavLink className='navlink' to="/contact">Contact</NavLink>
+             <a className="navlink" href = {pdf} target = "_blank">Resume</a> 
+
             </ul>
           </div>
         <div className="md:hidden" onClick={handleClick}>
@@ -33,10 +35,10 @@ function Nav() {
       
     <ul className={!nav ? "hidden" : "absolute bg-slate-300 w-full px-8"}>
      <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink to="/">Home</NavLink> </li>
-     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink to="/projects">Projects</NavLink></li>
      <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink to="/about">About</NavLink></li>
      <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink to="/contact">Contact</NavLink></li>
-    </ul>
+     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink to="/resume">Resume</NavLink></li>
+      </ul>
 
  
     </div>
