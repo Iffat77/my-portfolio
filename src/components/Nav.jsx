@@ -34,10 +34,10 @@ function Nav() {
       </div>
       
     <ul className={!nav ? "hidden" : "absolute bg-slate-300 w-full px-8"}>
-     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink to="/">Home</NavLink> </li>
-     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink to="/about">About</NavLink></li>
-     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink to="/contact">Contact</NavLink></li>
-     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink to="/resume">Resume</NavLink></li>
+     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink className='navlink' to="/">Home</NavLink> </li>
+     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink className='navlink' to="/about">About</NavLink></li>
+     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <NavLink className='navlink'to="/contact">Contact</NavLink></li>
+     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <a className="navlink" href = {pdf} target = "_blank">Resume</a> </li>
       </ul>
 
  

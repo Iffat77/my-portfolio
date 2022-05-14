@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import jslogo from '../components/images/js_logo.jpeg'
 import htmllogo from '../components/images/htmllogo.png'
 import csslogo from '../components/images/csslogo.png'
@@ -20,6 +20,11 @@ function Home() {
     navigate(path);
   }
 
+  const handleClick = () => {
+    window.open("https://guileless-sprinkles-26705e.netlify.app/","_blank");
+  }
+
+
 
   return (
     <div className='home-container'>
@@ -37,7 +42,7 @@ function Home() {
       <section className='my-5 md:flex md:flex-row h-full '>
        
         <div className='flex justify-center items-center md:pt-4 md:w-1/2 mb-4  sm:p0 sm:justify-center md:p-0 lg:mb-4'>
-          <img className='md:object-contain  md:rounded-md  md:border-none h-3/4 w-3/4 sm:h-3/4 sm:w-3/4 rounded-md border-solid border-2 border-slate-100 hover:drop-shadow-md ' src={guesswork} />
+        <a className='m-0 flex justify-center items-center' href="https://iffat77.github.io/frontend-game/" target="_blank"> <img className='md:object-contain  md:rounded-md  md:border-none h-3/4 w-3/4 rounded-md border-solid border-2 border-slate-100 hover:drop-shadow-md ' src={guesswork} /> </a>
         </div>
 
         <div className='flex md:w-1/2 items-center justify-center'>  
@@ -58,7 +63,9 @@ function Home() {
       <section className='my-5 md:flex md:flex-row h-full '>
         
         <div className='flex justify-center items-center md:w-1/2 mb-4 sm:mb-4 sm:p0 sm:justify-center md:p-0 md:mb-4 lg:mb-4'>
-          <img className='md:object-cover xl:object-contain md:rounded-md md:border-none h-3/4 w-3/4 sm:h-3/4 sm:w-3/4 rounded-md border-solid border-2  border-slate-100 hover:drop-shadow-md' src={Nycarc} />
+          
+          <img onClick={handleClick} className='md:object-cover lg:object-contain md:rounded-md md:border-none h-3/4 w-3/4 rounded-md border-solid border-2  border-slate-100 hover:drop-shadow-md' src={Nycarc} />
+        
         </div>
         
         <div className='flex md:w-1/2 items-center justify-center'>
@@ -76,7 +83,12 @@ function Home() {
 
       </section>
 
-      <section className='h-screen w-screen '>
+      <section id='contact' className='h-screen w-screen '>
+
+        <div className='my-32 flex justify-center items-center flex-col gap-10'>
+          <h1>Reach Out! </h1>
+          <a className='email-button' href='mailto:iffathossain77@gmail.com' target="_blank"><button>Let's Work</button></a>
+       </div> 
 
       </section>
 
