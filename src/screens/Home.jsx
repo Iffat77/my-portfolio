@@ -51,7 +51,7 @@ function Home() {
         <h1 className='text-center my-20'>Checkout some of my projects below!</h1>
       </div>
       
-      <section id='projects' className='my-5 md:flex md:flex-row h-full w-screen md:mt-12 pt-12'>
+      <section id='projects' className='my-5 md:flex md:flex-row h-full w-screen mt-24 pt-24 md:mt-16 md:pt-16'>
        
         <div className='flex justify-center items-center md:pt-4 md:w-1/2 mb-4  sm:p0 sm:justify-center md:p-0 lg:mb-4'>
          <img onClick={handleClickGuess} className='md:object-contain  md:rounded-md  md:border-none h-3/4 w-3/4 rounded-md border-solid border-2 border-slate-100 hover:drop-shadow-md ' src={guesswork} /> 
