@@ -69,7 +69,7 @@ function Home() {
        </div>
       </section>
     
-      <div className='m-2'>
+      <div className='m-2 '>
         <h1 className='text-orange-300 text-center my-20 font-bold text-2xl md:text-4xl'>Checkout some of my projects below!</h1>
       </div>
       
