@@ -81,7 +81,7 @@ function Home() {
 
         <div className='flex md:w-1/2 items-center justify-center'>  
          <div className='flex flex-col justify-center w-9/12 px-2 py-8 md:items-start border-solid md:border-none border-2 rounded-md'>
-          <div className='text-2xl text-center font-bold py-3 px-5 md:text-4xl '>Guess Work <img onClick={handleClickGuessRepo} className=' cursor-pointer h-20 rounded-md hover:shadow-md hover:shadow-indigo-300 p-2 m-4 ' src={githublogo} /></div>
+          <div className='text-slate-500 text-2xl text-center font-bold py-3 px-5 md:text-4xl '>Guess Work <img onClick={handleClickGuessRepo} className=' cursor-pointer h-20 rounded-md hover:shadow-md hover:shadow-indigo-300 p-2 m-4 ' src={githublogo} /></div>
           <p className='my-2 px-5 text-lg'> I created a variation of hangman called "Guess Work" using vanilla JavaScript, where one player has the option to enter a word which will be guessed by the second player, or a solo player can attempt to guess a random word before they run out of attempts. </p>
           <ul className='my-1 p-4 w-full flex justify-center '>
            <li><img className='h-20 rounded-md border-solid border-2 border-slate-100  hover:drop-shadow-md ' src={htmllogo}/></li>
@@ -104,7 +104,7 @@ function Home() {
         
         <div className='flex md:w-1/2 items-center justify-center'>
          <div className='flex flex-col justify-center w-9/12 px-2 py-8 md:items-start border-solid border-2 md:border-none rounded-md overflow-y-scroll'>
-          <div className='text-2xl text-center font-bold py-3 px-5 md:text-4xl '>Nyc Arc <img onClick={handleClickArcRepo} className='cursor-pointer h-20 rounded-md hover:shadow-md hover:shadow-indigo-300  p-2 m-4 ' src={githublogo} /> </div>
+          <div className='text-slate-500 text-2xl text-center font-bold py-3 px-5 md:text-4xl '>Nyc Arc <img onClick={handleClickArcRepo} className='cursor-pointer h-20 rounded-md hover:shadow-md hover:shadow-indigo-300  p-2 m-4 ' src={githublogo} /> </div>
           <p className='my-2 px-5 text-lg '> A website to introduce the architecture and skyscrapers of New York City, and a curated list of iconic sites around the city which users can update.  </p>
           <ul className='px-4 flex flex-col sm:flex-row md:flex-col lg:flex-row '>
            <li><img className='h-10 w-10 sm:h-20 sm:w-20 rounded-md hover:drop-shadow-md' src={jslogo}/></li> 
