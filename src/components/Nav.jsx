@@ -30,10 +30,10 @@ function Nav() {
       </div>
       
     <ul className={!nav ? "hidden" : "absolute bg-neutral-700 w-full px-8"}>
-     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <div className='text-orange-300 cursor-pointer' onClick={() => window.location.replace("/#top")}>Home</div> </li>
-     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <div className='text-orange-300 cursor-pointer' onClick={() => window.location.replace("/#about")}>About</div></li>
-     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <div className='text-orange-300 cursor-pointer' onClick={() => window.location.replace("/#projects")}>Projects</div> </li>
-     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <div className='text-orange-300 cursor-pointer' onClick={() => window.location.replace("/#contact")}>Contact</div> </li>
+        <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <div className='text-orange-300 cursor-pointer' onClick={() => (window.location.replace("/#top"),handleClick())}>Home</div> </li>
+     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <div className='text-orange-300 cursor-pointer' onClick={() => (window.location.replace("/#about"),handleClick())}>About</div></li>
+     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <div className='text-orange-300 cursor-pointer' onClick={() => (window.location.replace("/#projects"),handleClick())}>Projects</div> </li>
+     <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <div className='text-orange-300 cursor-pointer' onClick={() => (window.location.replace("/#contact"),handleClick())}>Contact</div> </li>
      <li className="border-b-2 border-slate-300 w-full py-3 text-center"> <a className='text-orange-300 cursor-pointer' href = {pdf} target = "_blank">Resume</a> </li>
     </ul>
 
