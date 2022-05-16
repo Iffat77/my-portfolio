@@ -54,7 +54,7 @@ function Home() {
       <section id='top' className='h-screen w-screen flex justify-center items-center'>
        <div className='flex flex-col gap-5 justify-center items-center w-9/12 px-8 py-8 border-solid md:border-none border-2 rounded-md'>
           <h1 className='font-quicksand text-orange-300 font-bold text-2xl md:text-4xl'>Iffat Hossain</h1>
-          <p className='text-slate-500 ' > Im a software engineer who enjoys learning about new technologies, music, and watching F1. </p>
+          <p className='text-slate-500 md:text-lg' > Im a software engineer who enjoys learning about new technologies, music, and watching F1. </p>
           <ul className='my-1 p-4 w-full flex justify-center '>
            <li><img onClick={handleClickGithub} className='h-20 rounded-md hover:shadow-md hover:shadow-indigo-300  cursor-pointer' src={githublogo}/></li>
            <li><img onClick={handleClickLinked} className='h-20 rounded-md hover:shadow-md hover:shadow-sky-300 cursor-pointer ' src={linkedinlogo}/></li>
@@ -65,7 +65,7 @@ function Home() {
       <section id='about' className='h-screen w-screen flex justify-center items-center  mt-24 pt-24'>
        <div className='flex flex-col gap-5 justify-center w-9/12 px-6 py-8 border-solid md:border-none border-2 rounded-md'>
         <h1 className='text-orange-300 font-bold text-center text-2xl md:text-4xl'> About </h1>
-        <p className=''> I am a Software Engineer who is motivated by finding innovative and efficient ways to improve products that impact people's daily lives. My passions include music, racing, and full-stack development in all of these areas of my life. I enjoy studying the way technology can optimize processes. I spent time learning Ableton Live software to create music, and am an avid fan of Formula 1 Racing where races are won not only by skilled drivers but by the teams that can make the most efficient vehicles and utilize their features well. As a developer I take this inspiration to think outside of the box to create efficient projects with clean and simple code. Collaborating is deeply important to me; having accessible code for my peers to interact with and making sure every teammate's voice is heard throughout the process leads to optimal results. I pride myself on contributing creative ideas, an ability to actively listen, and dedication for my craft.</p>
+        <p className='md:text-lg'> I am a Software Engineer who is motivated by finding innovative and efficient ways to improve products that impact people's daily lives. My passions include music, racing, and full-stack development in all of these areas of my life. I enjoy studying the way technology can optimize processes. I spent time learning Ableton Live software to create music, and am an avid fan of Formula 1 Racing where races are won not only by skilled drivers but by the teams that can make the most efficient vehicles and utilize their features well. As a developer I take this inspiration to think outside of the box to create efficient projects with clean and simple code. Collaborating is deeply important to me; having accessible code for my peers to interact with and making sure every teammate's voice is heard throughout the process leads to optimal results. I pride myself on contributing creative ideas, an ability to actively listen, and dedication for my craft.</p>
        </div>
       </section>
     
