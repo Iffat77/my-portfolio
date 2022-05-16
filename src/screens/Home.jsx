@@ -53,8 +53,8 @@ function Home() {
       
       <section id='top' className='h-screen w-screen flex justify-center items-center'>
        <div className='flex flex-col gap-5 justify-center items-center w-9/12 px-8 py-8 border-solid md:border-none border-2 rounded-md'>
-          <h1 className=' text-orange-300 font-bold text-2xl md:text-4xl'>Iffat Hossain</h1>
-          <p className='text-slate-500' > Im a software engineer who enjoys learning about new technologies, music, and watching F1. </p>
+          <h1 className='font-quicksand text-orange-300 font-bold text-2xl md:text-4xl'>Iffat Hossain</h1>
+          <p className='text-slate-500 ' > Im a software engineer who enjoys learning about new technologies, music, and watching F1. </p>
           <ul className='my-1 p-4 w-full flex justify-center '>
            <li><img onClick={handleClickGithub} className='h-20 rounded-md hover:shadow-md hover:shadow-indigo-300  cursor-pointer' src={githublogo}/></li>
            <li><img onClick={handleClickLinked} className='h-20 rounded-md hover:shadow-md hover:shadow-sky-300 cursor-pointer ' src={linkedinlogo}/></li>
