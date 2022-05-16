@@ -24,7 +24,7 @@ function Nav() {
             </ul>
           </div>
         <div className="md:hidden" onClick={handleClick}>
-              {!nav ? <MenuIcon className="w-5 cursor-pointer" /> : <XIcon className="w-5 cursor-pointer "/>}
+              {!nav ? <MenuIcon className="w-7 mr-4 cursor-pointer text-orange-300 " /> : <XIcon className="w-5 cursor-pointer text-orange-300 hover:shadow-md hover:shadow-orange-300"/>}
               
             </div>
       </div>
