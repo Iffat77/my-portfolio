@@ -84,7 +84,7 @@ function Home() {
       <section id='projects' className='my-5 md:flex md:flex-row h-full w-screen mt-24 pt-24 md:mt-16 md:pt-16'>
        
         <div className='flex justify-center items-center md:pt-4 md:w-1/2 mb-4  sm:p0 sm:justify-center md:p-0 lg:mb-4'>
-         <img onClick={handleClickGuess} className='cursor-pointer md:object-contain  md:rounded-md  md:border-none h-3/4 w-3/4 rounded-md border-solid border-2 border-slate-100 hover:drop-shadow-md ' src={guesswork} /> 
+         <img onClick={handleClickGuess} className='cursor-pointer md:object-contain  md:rounded-md  md:border-none h-3/4 w-3/4 rounded-md border-solid border-2 border-slate-300 hover:drop-shadow-md ' src={guesswork} /> 
         </div>
 
         <div className='flex md:w-1/2 items-center justify-center'>  
@@ -104,7 +104,7 @@ function Home() {
       <section id='projects' className='my-5 md:flex md:flex-row h-full w-screen mt-24 pt-24 md:mt-16 md:pt-16'>
        
        <div className='flex justify-center items-center md:pt-4 md:w-1/2 mb-4  sm:p0 sm:justify-center md:p-0 lg:mb-4'>
-        <img onClick={handleClickIflix} className='cursor-pointer md:object-contain  md:rounded-md  md:border-none h-3/4 w-3/4 rounded-md border-solid border-2 border-slate-100 hover:drop-shadow-md ' src={iflix} /> 
+        <img onClick={handleClickIflix} className='cursor-pointer md:object-cover  md:rounded-md  md:border-none h-3/4 w-3/4 rounded-md border-solid border-2 border-slate-300 hover:drop-shadow-md hover:shadow-md hover:shadow-300 ' src={iflix} /> 
        </div>
 
        <div className='flex md:w-1/2 items-center justify-center'>  
