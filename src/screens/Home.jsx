@@ -11,6 +11,7 @@ import guesswork from '../components/images/guesswork.png'
 import Nycarc from '../components/images/Nycarc.png'
 import linkedinlogo from '../components/images/linkedinlogo.png'
 import githublogo from '../components/images/githublogo.png'
+import iflix from '../components/images/iflix.png'
 
 import '../App.css'
 
@@ -32,6 +33,13 @@ function Home() {
 
   const handleClickGuessRepo = () => {
     window.open("https://github.com/Iffat77/frontend-game","_blank");
+  }
+
+  const handleClickIflix = () => {
+    window.open("https://iflicks.netlify.app/", "_blank");
+  }
+  const handleClickIflixRepo = () => {
+    window.open("https://github.com/Iffat77/i-flix", "_blank");
   }
 
   const handleClickArcRepo = () => {
@@ -84,7 +92,7 @@ function Home() {
           <div className='text-slate-500 text-2xl text-center font-bold py-3 px-5 md:text-4xl '>Guess Work <img onClick={handleClickGuessRepo} className=' cursor-pointer h-20 rounded-md hover:shadow-md hover:shadow-indigo-300 p-2 m-4 ' src={githublogo} /></div>
           <p className='my-2 px-5 text-lg'> I created a variation of hangman called "Guess Work" using vanilla JavaScript, where one player has the option to enter a word which will be guessed by the second player, or a solo player can attempt to guess a random word before they run out of attempts. </p>
           <ul className='my-1 p-4 w-full flex justify-center '>
-           <li><img className='h-20 rounded-md border-solid border-2 border-slate-100  hover:drop-shadow-md ' src={htmllogo}/></li>
+           <li><img className='h-20 rounded-md border-solid border-2 border-slate-100  hover:drop-shadow-md ' src={htmllogo} /></li>
            <li><img className='h-20 rounded-md border-solid border-2 border-slate-100  hover:drop-shadow-md ' src={csslogo}/></li>
            <li><img className='h-20 rounded-md hover:drop-shadow-md' src={jslogo}/></li>  
           </ul>
@@ -92,6 +100,27 @@ function Home() {
         </div>
 
       </section>  
+
+      <section id='projects' className='my-5 md:flex md:flex-row h-full w-screen mt-24 pt-24 md:mt-16 md:pt-16'>
+       
+       <div className='flex justify-center items-center md:pt-4 md:w-1/2 mb-4  sm:p0 sm:justify-center md:p-0 lg:mb-4'>
+        <img onClick={handleClickIflix} className='cursor-pointer md:object-contain  md:rounded-md  md:border-none h-3/4 w-3/4 rounded-md border-solid border-2 border-slate-100 hover:drop-shadow-md ' src={iflix} /> 
+       </div>
+
+       <div className='flex md:w-1/2 items-center justify-center'>  
+        <div className='flex flex-col justify-center w-9/12 px-2 py-8 md:items-start border-solid md:border-none border-2 rounded-md'>
+         <div className='text-slate-500 text-2xl text-center font-bold py-3 px-5 md:text-4xl '>i-Flix <img onClick={handleClickIflixRepo} className=' cursor-pointer h-20 rounded-md hover:shadow-md hover:shadow-indigo-300 p-2 m-4 ' src={githublogo} /></div>
+         <p className='my-2 px-5 text-lg'> This Application allows you to scroll through the top 50 films on from IMDB and provides click-able movie posters. Clicking the posters displays a modal with the title, name of actors, and a brief description of the plot. </p>
+         <ul className='my-1 p-4 w-full flex justify-center '>
+          <li><img className='h-20 rounded-md border-solid border-2 border-slate-100  hover:drop-shadow-md ' src={htmllogo}/></li>
+          <li><img className='h-20 rounded-md border-solid border-2 border-slate-100  hover:drop-shadow-md ' src={csslogo}/></li>
+          <li><img className='h-20 rounded-md hover:drop-shadow-md' src={jslogo} /></li>  
+          <li><img className='h-20 rounded-md border-solid border-2 border-slate-100  hover:drop-shadow-md ' src={reactlogo}/></li>
+         </ul>
+        </div>
+       </div>
+
+     </section>  
 
 
       <section className='my-5 md:flex md:flex-row h-full '>
